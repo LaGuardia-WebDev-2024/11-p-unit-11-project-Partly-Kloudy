@@ -6,6 +6,10 @@ var leaftwoY = [100, 85, 123, 114, 140, 165, 155, 150, 170, 185, 195, 190, 215, 
 
 var leafoneX = [200, 225, 250, 275, 300, 325, 350, 375, 400, 425];
 
+var catImageone = loadImage("https://png.pngtree.com/png-vector/20231014/ourmid/pngtree-the-black-cat-png-image_10157671.png");
+
+var catImagetwo = loadImage("https://www.freeiconspng.com/uploads/black-cat-png-15.png");
+
 setup = function() {
    size(600, 450); 
    background(164, 212, 255, 0);
@@ -32,8 +36,14 @@ setup = function() {
    };
    
 }
+
+draw = function(){
+image(catImageone, 20, 340, 70, 75); 
+image(catImagetwo, 475, 340, 70, 65);
+};
+
  var drawCat = function(catX, catY){
   textSize(50);
-  text("🐈", catX, catY);
+  text("🐈‍⬛", catX, catY);
 };
 
